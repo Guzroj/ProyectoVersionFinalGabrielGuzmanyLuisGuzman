@@ -5,7 +5,7 @@ public class ListaDobleCir {
 
         // Puntero que indica el inicio de la lista o conocida tambien
         // como cabeza de la lista.
-        private NodoDE inicio;
+        private nodoDobleCir inicio;
         // Variable para registrar el tamaño de la lista.
         private int size;
 
@@ -27,7 +27,7 @@ public class ListaDobleCir {
 
         public void agregarAlFinal(String valor){
             // Define un nuevo nodo.
-            NodoDE nuevo = new NodoDE();
+            nodoDobleCir nuevo = new nodoDobleCir();
             // Agrega al valor al nodo.
             nuevo.setValor(valor);
             // Consulta si la lista esta vacia.
@@ -38,7 +38,7 @@ public class ListaDobleCir {
                 //y agrega el nuevo.
             } else{
                 // Crea ua copia de la lista.
-                NodoDE aux = inicio;;
+                nodoDobleCir aux = inicio;;
                 // Recorre la lista hasta llegar al ultimo nodo.
                 while(aux.getSiguiente() != null){
                     aux= aux.getSiguiente();

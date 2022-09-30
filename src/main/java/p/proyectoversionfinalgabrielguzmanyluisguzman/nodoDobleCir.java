@@ -4,9 +4,9 @@ public class nodoDobleCir {
 
 
 
-        // Variable en la cual se va a guardar el valor.
+
         private String valor;
-        // Variable para enlazar los nodos.
+
         private nodoDobleCir siguiente, anterior;
 
         public void Nodo(){
@@ -15,7 +15,6 @@ public class nodoDobleCir {
             this.anterior = null;
         }
 
-        // Métodos get y set para los atributos.
 
         public String getValor() {
             return valor;
