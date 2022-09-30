@@ -21,13 +21,13 @@ public class Main extends Application {
 
     public static void main(String[] args) {
 
-        Lista song= new Lista();
+        /*Lista song= new Lista();
 
         song.add(new File("Musica/Basado/Alones.mp3"));
         song.add(new File("Musica/Basado/Believe.mp3"));
 
         Lista mostrar= new Lista();
-        mostrar.desplegarnodo();
+        mostrar.desplegarnodo();*/
         launch();
     }
 }

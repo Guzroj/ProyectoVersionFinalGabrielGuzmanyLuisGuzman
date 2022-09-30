@@ -4,6 +4,7 @@ module p.proyectoversionfinalgabrielguzmanyluisguzman {
     requires javafx.media;
     requires json.simple;
     requires java.xml;
+    requires java.logging;
 
 
     opens p.proyectoversionfinalgabrielguzmanyluisguzman to javafx.fxml;

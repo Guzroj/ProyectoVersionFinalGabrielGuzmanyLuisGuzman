@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="249.0" prefWidth="722.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="p.proyectoversionfinalgabrielguzmanyluisguzman.Controller">
+    <children>
+        <Label fx:id="songLabel" alignment="CENTER" layoutX="-66.0" prefHeight="52.0" prefWidth="847.0" text="iPod Shuffle" textFill="#0fdb12">
+            <font>
+                <Font size="30.0" />
+            </font>
+        </Label>
+        <ProgressBar fx:id="songProgressBar" layoutY="52.0" prefHeight="18.0" prefWidth="716.0" progress="0.0" />
+        <Button fx:id="playButton" layoutY="93.0" mnemonicParsing="false" style="-fx-background-color: black;" text="Play" textFill="#fd0505">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Button>
+        <Button fx:id="pauseButton" layoutX="94.0" layoutY="93.0" mnemonicParsing="false" style="-fx-background-color: black;" text="Pause" textFill="#1f10eb">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Button>
+        <Button fx:id="resetButton" layoutX="212.0" layoutY="93.0" mnemonicParsing="false" style="-fx-background-color: black;" text="Reset" textFill="#e9d20b">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Button>
+        <Button fx:id="previousButton" layoutX="325.0" layoutY="93.0" mnemonicParsing="false" style="-fx-background-color: black;" text="Previous" textFill="#10f9fd">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Button>
+        <Button fx:id="nextButton" layoutX="477.0" layoutY="93.0" mnemonicParsing="false" style="-fx-background-color: black;" text="Next" textFill="#ef10ac">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Button>
+        <Slider fx:id="volumeSlider" layoutX="562.0" layoutY="112.0" max="100.0" value="100.0" />
+        <Button layoutX="324.0" layoutY="179.0" mnemonicParsing="false" onAction="#switchtocanciones" text="Back">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

@@ -26,6 +26,7 @@ public class Login {
     private Parent root;
 
 
+
     @FXML
     private void registrarButton(Event event) throws IOException{
         JSONObject obj = new JSONObject();
