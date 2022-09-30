@@ -26,7 +26,7 @@ public class Controller {
 
     public void switchtologin(ActionEvent event) {
         try {
-            root = FXMLLoader.load(getClass().getResource("uig.fxml"));
+            root = FXMLLoader.load(getClass().getResource("Scene1.fxml"));
             stage = (Stage)((Node)event.getSource()).getScene().getWindow();
             scene = new Scene(root);
             stage.setScene(scene);
@@ -60,7 +60,7 @@ public class Controller {
         }
         System.out.println(message);
         try {
-            root = FXMLLoader.load(getClass().getResource("Canciones.fxml"));
+            root = FXMLLoader.load(getClass().getResource("Scene2.fxml"));
             stage = (Stage)((Node)event.getSource()).getScene().getWindow();
             scene = new Scene(root);
             stage.setScene(scene);
@@ -103,7 +103,7 @@ public class Controller {
         listviewpl.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
     }
     public void cargarallsongs(){
-        prueba.reader("musica");
+        prueba.reader("locura");
     }
 
 }

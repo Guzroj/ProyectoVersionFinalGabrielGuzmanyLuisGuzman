@@ -78,7 +78,7 @@ public class Login {
         for(int i=0;i<size;i++){
             if(obj.equals(jrr.get(i))){
                 System.out.println("Password matched");
-                Parent root = FXMLLoader.load(getClass().getResource("Scene2.fxml"));
+                Parent root = FXMLLoader.load(getClass().getResource("bibliotecas.fxml"));
                 stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                 scene = new Scene(root);
                 stage.setScene(scene);

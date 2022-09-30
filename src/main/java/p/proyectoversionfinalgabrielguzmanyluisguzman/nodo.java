@@ -4,18 +4,20 @@ import java.io.File;
 
 public class nodo {
     private String valor;
+    // Variable para enlazar los nodos.
+    private nodo siguiente;
 
-    File dato;
+    private nodo anterior;
 
-    nodo siguiente;
-
-    nodo anterior;
-
-/*    public void Nodo(){
+    /**
+     * Constructor que inicializamos el valor de las variables.
+     */
+    public void nodo() {
         this.valor = "";
         this.siguiente = null;
     }
 
+    // Métodos get y set para los atributos.
 
     public String getValor() {
         return valor;
@@ -25,17 +27,19 @@ public class nodo {
         this.valor = valor;
     }
 
-    public Nodo getSiguiente() {
+    public nodo getSiguiente() {
         return siguiente;
     }
 
-    public void setSiguiente(Nodo siguiente) {
+    public void setSiguiente(nodo siguiente) {
         this.siguiente = siguiente;
     }
 
-    public void setAnterior(Nodo anterior) {this.anterior = anterior;}
+    public void setAnterior(nodo anterior) {
+        this.anterior = anterior;
+    }
 
-    public Nodo getAnterior() {return anterior;}
-}
- */
+    public nodo getAnterior() {
+        return anterior;
+    }
 }
