@@ -3,11 +3,15 @@ package p.proyectoversionfinalgabrielguzmanyluisguzman;
 import java.io.File;
 
 public class nodo {
+
+    int dato;
+
+
     private String valor;
     // Variable para enlazar los nodos.
-    private nodo siguiente;
+    nodo siguiente;
 
-    private nodo anterior;
+    nodo anterior;
 
     /**
      * Constructor que inicializamos el valor de las variables.
