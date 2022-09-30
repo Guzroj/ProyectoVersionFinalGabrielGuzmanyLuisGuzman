@@ -30,7 +30,7 @@ public class Reproductor {
     public void repro(){
         Lista song= new Lista();
 
-        song.add()
+        //song.add()
 
 
 
