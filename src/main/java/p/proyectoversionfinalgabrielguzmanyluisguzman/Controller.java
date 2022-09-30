@@ -133,7 +133,7 @@ public class Controller {
     }
 
     public void cargarallsongs() {
-        NodeList all_songs = prueba.getPlaylistSongs("Basado");
+        NodeList all_songs = prueba.getPlaylistSongs("Normal");
         for (int j = 4; j < all_songs.getLength(); j = j + 6) {
             org.w3c.dom.Node hijo = all_songs.item(j);
             String vnombre = (hijo.getTextContent().toString());
@@ -161,7 +161,7 @@ public class Controller {
 
     public void showsongs() {
         System.out.println("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
-        NodeList lista_songs = prueba.getPlaylistSongs("Basado");
+        NodeList lista_songs = prueba.getPlaylistSongs("Normal");
         for (int j = 4; j < lista_songs.getLength(); j = j + 6) {
             org.w3c.dom.Node hijo = lista_songs.item(j);
             String vnombre = (hijo.getTextContent());
@@ -217,5 +217,7 @@ public class Controller {
         public void playMedia() {
             mediaPlayer.play();
         }
+
+
+
     }
-}
