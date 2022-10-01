@@ -88,7 +88,7 @@ public class Controller {
             stage.show();
         } catch (IOException e) {
             throw new RuntimeException(e);
-        }
+        }//tomado de https://www.youtube.com/watch?v=hcM-R-YOKkQ
 
     }
 
@@ -117,7 +117,7 @@ public class Controller {
             throw new RuntimeException(e);
         }
         cargarallsongs();
-    }
+    }//armado con consejos de tutorias
 
     /**
      * funciona para cambiar a la ventana del reproductor
@@ -135,7 +135,7 @@ public class Controller {
 
         } catch (IOException e) {
             throw new RuntimeException(e);
-        }
+        }//tomado de https://www.youtube.com/watch?v=-D2OIekCKes
     }
 
     /**
@@ -145,7 +145,7 @@ public class Controller {
     public void agregarplaylist() {
         playlist.agregarAlFinal("Basado");
         playlist.agregarAlFinal("Normal");
-    }
+    }//armado con consejos de tutorias
 
     /**
      * cargarpl se utiliza para cargar la playlist
@@ -245,4 +245,4 @@ public class Controller {
             }
         }
     }
-}
+}//tomado de https://www.youtube.com/watch?v=hcM-R-YOKkQ

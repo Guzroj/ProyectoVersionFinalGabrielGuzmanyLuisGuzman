@@ -142,4 +142,4 @@ package p.proyectoversionfinalgabrielguzmanyluisguzman;
             }
         }
 
-    }
+    }//lista armada en base a tutorias y clases

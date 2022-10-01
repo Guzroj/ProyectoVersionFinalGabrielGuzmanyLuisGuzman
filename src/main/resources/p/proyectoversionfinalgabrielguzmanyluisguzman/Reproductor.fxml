@@ -9,7 +9,7 @@
 
 <AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="249.0" prefWidth="722.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="p.proyectoversionfinalgabrielguzmanyluisguzman.Controller">
     <children>
-        <Label fx:id="songLabel" alignment="CENTER" layoutX="-66.0" prefHeight="52.0" prefWidth="847.0" text="iPod Shuffle" textFill="#0fdb12">
+        <Label fx:id="songLabel" alignment="CENTER" layoutX="-66.0" prefHeight="52.0" prefWidth="847.0" text="Reproductor " textFill="#0fdb12">
             <font>
                 <Font size="30.0" />
             </font>
