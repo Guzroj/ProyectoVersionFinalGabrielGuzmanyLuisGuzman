@@ -23,8 +23,18 @@ import java.io.File;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-
+/**
+ * Basado es utilizado para crear un xml.
+ * Crea un xml desde 0, de forma que se puede manipular.
+ * @author Gabriel
+ * @version 1.0
+ */
 public class Basado {
+
+    /**
+     *
+     * @param args utilizado para poder hacer que basado se cree.
+     */
 
     public static void main(String[] args) {
 

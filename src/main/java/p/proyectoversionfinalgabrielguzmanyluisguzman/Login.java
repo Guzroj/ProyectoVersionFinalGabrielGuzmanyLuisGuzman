@@ -20,6 +20,11 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
+/**
+ * funciona para validar los usuarios
+ * Se realiza por medio de json.
+ */
+
 public class Login {
     private Stage stage;
     private Scene scene;

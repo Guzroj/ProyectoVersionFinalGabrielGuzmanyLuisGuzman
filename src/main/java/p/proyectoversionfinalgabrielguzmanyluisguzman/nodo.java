@@ -2,6 +2,10 @@ package p.proyectoversionfinalgabrielguzmanyluisguzman;
 
 import java.io.File;
 
+/**
+ *
+ *nodo fue realizado para realizar la lista enlazada
+ */
 public class nodo {
 
     int dato;
@@ -14,14 +18,15 @@ public class nodo {
     nodo anterior;
 
     /**
-     * Constructor que inicializamos el valor de las variables.
+     * nodo() se refiere a la cabeza del nodo
+     *
      */
     public void nodo() {
         this.valor = "";
         this.siguiente = null;
     }
 
-    // Métodos get y set para los atributos.
+    // Forma de definir los metodos que voy a utilizar para avanzar en el nodo
 
     public String getValor() {
         return valor;

@@ -13,8 +13,14 @@ import java.io.IOException;
 
 import static java.lang.Integer.parseInt;
 
+/**
+ * se utiliza para leer el xml
+ */
 public class LectorXML {
-
+    /**
+     * me permite obtener todos las canciones y sus datos de un xml
+     * @param nombre es el nombre del xml a leer
+     */
         public void reader(String nombre) {
             String path = nombre + ".xml";
             System.out.println(path);

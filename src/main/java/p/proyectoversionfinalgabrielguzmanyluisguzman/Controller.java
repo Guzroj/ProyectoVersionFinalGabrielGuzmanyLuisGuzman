@@ -18,7 +18,15 @@ import org.w3c.dom.NodeList;
 
 import java.io.IOException;
 
+/**
+ * Controller es donde sucede la mayoria de eventos
+ * En Controller pasa la mayoria del codigo, tanto cambios de pantalla como lector.
+ * @author Gabriel
+ * @version 1.0
+ */
+
 public class Controller {
+
     private Stage stage;
     private Scene scene;
     private Parent root;
@@ -48,6 +56,11 @@ public class Controller {
 
     private String prueba_num = "";
 
+    /**
+     * switchtologin funciona par
+     * @param event
+     */
+
 
     public void switchtologin(ActionEvent event) {
         try {
@@ -61,6 +74,11 @@ public class Controller {
         }
     }
 
+    /**
+     * switchtobibliotecas se encarga de hacer el cambio de pantalla a la siguiente
+     * @param event evento de cambio
+     */
+
     public void switchtobibliotecas(ActionEvent event) {
         try {
             root = FXMLLoader.load(getClass().getResource("bibliotecas.fxml"));
@@ -73,6 +91,11 @@ public class Controller {
         }
 
     }
+
+    /**
+     * switchtocanciones me crea un list view de la playlist que selecciono
+     * @param event reacciona ante la accion para el listview
+     */
 
     public void switchtocanciones(ActionEvent event) {
         ObservableList<String> playlist;
@@ -96,6 +119,11 @@ public class Controller {
         cargarallsongs();
     }
 
+    /**
+     * funciona para cambiar a la ventana del reproductor
+     * @param event es la accion para cambiar
+     */
+
     public void switchtoReproductor(ActionEvent event) {
         try {
             root = FXMLLoader.load(getClass().getResource("Reproductor.fxml"));
@@ -110,15 +138,21 @@ public class Controller {
         }
     }
 
-
-    public void agregarpl() {
+    /**
+     * agregarplaylist se utiliza para agregar datos a una lista
+     * se utiliza para agregar datos a una lista de las playlist disponibles.
+     */
+    public void agregarplaylist() {
         playlist.agregarAlFinal("Basado");
         playlist.agregarAlFinal("Normal");
     }
 
-
+    /**
+     * cargarpl se utiliza para cargar la playlist
+     * funciona para poder crear la playlist
+     */
     public void cargarpl() {
-        agregarpl();
+        agregarplaylist();
         int i;
         for (i = 0; i < playlist.getSize(); i++) {
             try {
@@ -132,6 +166,9 @@ public class Controller {
         listviewpl.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
     }
 
+    /**
+     * Funciona para cargar las canciones de lo que necesito
+     */
     public void cargarallsongs() {
         NodeList all_songs = prueba.getPlaylistSongs("Normal");
         for (int j = 4; j < all_songs.getLength(); j = j + 6) {
@@ -159,8 +196,11 @@ public class Controller {
 
     }
 
+    /**
+     * funciona para mostrar las canciones que quisieramos agregar a las playlist
+     * Esto nos retorna el nombre de la cacnion pero lo podemos modificar a nuestro antojo para que nos devuelva el dato que queramos.
+     */
     public void showsongs() {
-        System.out.println("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
         NodeList lista_songs = prueba.getPlaylistSongs("Normal");
         for (int j = 4; j < lista_songs.getLength(); j = j + 6) {
             org.w3c.dom.Node hijo = lista_songs.item(j);
@@ -184,8 +224,12 @@ public class Controller {
             }
         }
         listviewplsongs.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
-        System.out.println("Holaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
     }
+
+    /**
+     * se utiliza para que me devuelva los url
+     * este metodo se encarga de devolverle los url en forma de lista.
+     */
 
     public void getUrl() {
         //System.out.println("buenas");
@@ -201,23 +245,4 @@ public class Controller {
             }
         }
     }
-
-
-
-
-        public void Reproductor() {
-            Controller songs= new Controller();
-            songs.getUrl();
-
-            media = new Media(songs.toString());
-            mediaPlayer = new MediaPlayer(media);
-        }
-
-
-        public void playMedia() {
-            mediaPlayer.play();
-        }
-
-
-
-    }
+}

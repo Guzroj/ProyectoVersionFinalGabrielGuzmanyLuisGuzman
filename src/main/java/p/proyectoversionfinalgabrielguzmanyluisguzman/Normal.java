@@ -23,6 +23,10 @@ import java.io.File;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ * Sirve para crear la playlist de normal
+ */
+
 public class Normal {
     public static void main(String[] args) {
 

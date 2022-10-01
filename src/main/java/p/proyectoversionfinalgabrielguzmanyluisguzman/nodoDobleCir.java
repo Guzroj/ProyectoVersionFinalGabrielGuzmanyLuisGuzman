@@ -1,5 +1,8 @@
 package p.proyectoversionfinalgabrielguzmanyluisguzman;
 
+/**
+ * funciona para los valores de la doble enlazada circular.
+ */
 public class nodoDobleCir {
 
 

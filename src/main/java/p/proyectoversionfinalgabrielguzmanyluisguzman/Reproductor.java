@@ -18,7 +18,7 @@ public class Reproductor {
 
 
     public void playMedia() {
-        mediaPlayer.play();
+//        ListaDobleCir
 
 
 
